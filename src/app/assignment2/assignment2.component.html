@@ -1,0 +1,13 @@
+<h2>Welcome to the Assignment</h2>
+
+<input type="text" placeholder="Username" class="form-control" [(ngModel)]="username" >
+<!-- <div *ngIf="username===''"> -->
+<p *ngIf="see()">User name is {{username}}</p>
+<!-- </div> -->
+
+<!-- both are correct -->
+<button class='btn btn-primary' [disabled]="!see()" (click)="makeempty()">Confirm</button>
+
+<!-- <button class='btn btn-primary' [disabled]="username===''" (click)="makeempty()">Confirm</button> -->
+
+{{empty}}

@@ -1,0 +1,17 @@
+<h1>Niroshan Ratnayake {{indexNo}} Status :{{getServerStatus()}} and age of {{age}}</h1>
+<!-- String interpolation -->
+<!-- <lable>Success Lable</lable> -->
+<input type="text" class="form-control" (input)="onSuccessUpdate($event)">
+<p>{{successName}}</p>
+
+<!-- Twoway data biniding -->
+
+<input type="text" class="form-control" [(ngModel)]="update2">
+<p>{{update2}}</p>
+
+<button class='btn btn-primary' [disabled]="!allowSuccess" (click)="save()">Add Success</button>
+<!-- after two seconds button gets visible  property binding-->
+<!-- property biniding is to make somthing change at runtime like aftrer two secods button get active and so on
+string interpolation is used to get the exact value and display in the screen -->
+<p>{{allowSuccess}}</p>
+{{message}}
